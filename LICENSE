@@ -1,0 +1,9 @@
+Copyright (c) 2026 <Your Name>
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 2.0 Generic License.
+To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc-sa/2.0/
+
+The FFT core in sources/fpga-fft/ and sources/codegen/ is from fpga-fft
+by owocomm-0 (https://github.com/owocomm-0/fpga-fft), under the same license.
