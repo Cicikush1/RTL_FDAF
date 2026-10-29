@@ -1,6 +1,8 @@
 # RTL_FDAF
 Frequency Domain Adaptive Filter designed in Register Transfer Level. This project aims for audio applications, therefore it adapts a resource sharing architecture rather than an unfolded one.
 
+## Authors Notes: 
+This is my very first FDAF project, therefore some bad architectural/systematic decisions were made (such as a monolith file) these decisions had to be kept until the end since so much work was already done. However, I do acknowledge that the resulting work is quite hard to maintain/work on. 
 
 ## References
 [1] D. Comminiello, M. Scarpiniti, R. Parisi, and A. Uncini, "Frequency-domain adaptive filtering: From real to hypercomplex signal processing," in *Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)*, Brighton, UK, 2019, pp. 7745–7749, doi: [10.1109/ICASSP.2019.8683403](https://doi.org/10.1109/ICASSP.2019.8683403).
