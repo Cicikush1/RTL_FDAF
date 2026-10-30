@@ -1,4 +1,4 @@
-# RTL_FDAF
+# RTL_FDAF ## Current Version :0.9.0
 Frequency Domain Adaptive Filter designed in Register Transfer Level. This project aims for audio applications, therefore it adapts a resource sharing architecture rather than an unfolded one.
 
 ## Authors Notes 
