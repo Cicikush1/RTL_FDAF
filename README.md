@@ -1,6 +1,7 @@
 # RTL_FDAF 
-### Current Version :0.9.0
 Frequency Domain Adaptive Filter designed in Register Transfer Level. This project aims for audio applications, therefore it adapts a resource sharing architecture rather than an unfolded one.
+
+### Current Version :0.9.0
 
 ## Authors Notes 
 This is my very first FDAF project, therefore some bad architectural/systematic decisions were made (such as a monolith file) these decisions had to be kept until the end since so much work was already done. However, I do acknowledge that the resulting work is quite hard to maintain/work on. Also an important point would be to state that LLMs have been utilized in this project.
