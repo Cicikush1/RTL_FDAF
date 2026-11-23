@@ -15,6 +15,7 @@ The design can marginally close 100 MHz on Nexys A7-100T (xc7a100tcsg324-1) with
 
 A Constrained FDAF requires 3 forward and 2 backward (inverse) FFTs. Since these need to be packed into a singular FFT module for area and power goals. We do this using the "Double Swap Trick" which can be seen from the picture below:
 <img width="860" height="780" alt="image" src="https://github.com/user-attachments/assets/c84ed533-1849-4047-8cfa-5238fe915b8d" />
+
 Source: https://sistenix.com/fft.html, Figure 4, Last access: 23/11/2026
 
 ## References
