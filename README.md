@@ -1,7 +1,7 @@
 # RTL_FDAF 
 Frequency Domain Adaptive Filter designed in Register Transfer Level. This project aims for audio applications, therefore it adapts a resource sharing architecture rather than an unfolded one.
 
-### Current Version :0.9.0
+### Current Version : 0.9.0
 
 ## Authors Notes 
 This is my very first FDAF project, therefore some bad architectural/systematic decisions were made (such as a monolith file) these decisions had to be kept until the end since so much work was already done. However, I do acknowledge that the resulting work is quite hard to maintain/work on. Also an important point would be to state that LLMs have been utilized in this project.
@@ -12,6 +12,10 @@ As stated in the entry, this module targets audio applications, therefore implem
 The design can marginally close 100 MHz on Nexys A7-100T (xc7a100tcsg324-1) with a WNS = 0.157 ns which is quite acceptable since ~2.6 MHz operating frequency is enough for 44.1 kHz sampled audio. This brings us the advantage of low power draw even at 100 MHz:
 
 <img width="375" height="390" alt="image" src="https://github.com/user-attachments/assets/8d76a572-f4b8-4311-bef7-5d6e277f8190" />
+
+A Constrained FDAF requires 3 forward and 2 backward (inverse) FFTs. Since these need to be packed into a singular FFT module for area and power goals. We do this using the "Double Swap Trick" which can be seen from the picture below:
+<img width="860" height="780" alt="image" src="https://github.com/user-attachments/assets/c84ed533-1849-4047-8cfa-5238fe915b8d" />
+Source: https://sistenix.com/fft.html, Figure 4, Last access: 23/11/2026
 
 ## References
 [1] D. Comminiello, M. Scarpiniti, R. Parisi, and A. Uncini, "Frequency-domain adaptive filtering: From real to hypercomplex signal processing," in *Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)*, Brighton, UK, 2019, pp. 7745–7749, doi: [10.1109/ICASSP.2019.8683403](https://doi.org/10.1109/ICASSP.2019.8683403).
