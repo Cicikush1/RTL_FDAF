@@ -17,6 +17,7 @@ A Constrained FDAF requires 3 forward and 2 backward (inverse) FFTs. Since these
 <img width="860" height="780" alt="output" src="https://github.com/user-attachments/assets/9325081f-4be1-48ea-a685-b0a7ed8551e9" />
 
 Source: https://sistenix.com/fft.html, Figure 4, Last access: 23/11/2026
+
 This technique allows us to simply reuse the same core both for IFFT and FFT.
 ## References
 [1] D. Comminiello, M. Scarpiniti, R. Parisi, and A. Uncini, "Frequency-domain adaptive filtering: From real to hypercomplex signal processing," in *Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)*, Brighton, UK, 2019, pp. 7745–7749, doi: [10.1109/ICASSP.2019.8683403](https://doi.org/10.1109/ICASSP.2019.8683403).
